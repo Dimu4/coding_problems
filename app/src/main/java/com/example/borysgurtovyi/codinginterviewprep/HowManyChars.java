@@ -26,7 +26,9 @@ public class HowManyChars {
 
         for(char ch : myHashMap.keySet()) {
             int value = myHashMap.get(ch);
-            System.out.println(ch +" => " + value);
+            if(value==1) {
+                System.out.println(ch + " => " + value);
+            }
         }
     }
 }
