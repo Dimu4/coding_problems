@@ -26,4 +26,6 @@ public class FizzBuzz {
         return resultList;
     }
 
+    // O(n)
+
 }
