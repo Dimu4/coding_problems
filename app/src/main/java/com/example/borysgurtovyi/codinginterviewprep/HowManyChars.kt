@@ -10,7 +10,7 @@ open class HowManyCharsK {
 
         for(ch in string.toCharArray()){
             if (!myMap.containsKey(ch)){
-                myMap.put(ch, 1)
+                    myMap.put(ch, 1)
             } else {
                 val number = myMap.getValue(ch) + 1
                 myMap.put(ch, number)
