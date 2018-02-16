@@ -5,7 +5,7 @@ import org.junit.Test
 /**
  * Created by aliyaserikbol on 2/2/18.
  */
-class HowManyCharsTestKt {
+public class HowManyCharsTestKt {
 
     @Test
     private fun testHowManyCharsKt() {

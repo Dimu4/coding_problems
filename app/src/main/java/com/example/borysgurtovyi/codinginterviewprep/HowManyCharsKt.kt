@@ -19,14 +19,16 @@ class HowManyCharsKt {
                 myHashMap[ch] = 1
             } else {
                 val oldNumberOfCharacter = myHashMap[ch]
-                val newNumber = oldNumberOfCharacter!!.plus(1)
-                myHashMap[ch] = newNumber
+                val newNumber = oldNumberOfCharacter?.plus(1)
+//                if (newNumber != null) {
+                myHashMap[ch] = newNumber ?: -1
+//            }
             }
-        }
 
-        for (ch in myHashMap.keys) {
-            val value = myHashMap[ch]
-            println(ch + " => " + value)
+            for (ch in myHashMap.keys) {
+                val value = myHashMap[ch]
+                println(ch + " => " + value)
+            }
         }
     }
 }
