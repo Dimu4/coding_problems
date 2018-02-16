@@ -14,4 +14,10 @@ public class HowManyCharsTest {
         String str = "Hello, Ultimate bootcamp!";
         howManyCharsClass.howManyChars(str);
     }
+
+    @Test
+    public void testHowManyCharsKotlin() {
+        HowManyCharsK howManyCharsK = new HowManyCharsK();
+        howManyCharsK.howManyChars("Hello world!");
+    }
 }
