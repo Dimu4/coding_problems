@@ -9,15 +9,11 @@ open class HowManyCharsK {
         val myMap = HashMap<Char, Int>()
 
         for(ch in string.toCharArray()){
-            if (!myMap.containsKey(ch)){
-                    myMap.put(ch, 1)
-            } else {
-                val number = myMap.getValue(ch) + 1
-                myMap.put(ch, number)
-            }
+            myMap[ch] = (myMap[ch] ?: 0) + 1
         }
         for (ch in myMap.keys) {
-            println(ch + " ==> " + myMap.getValue(ch))
+            val number = myMap[ch]
+            println(ch + " ==> " + number)
         }
     }
 }

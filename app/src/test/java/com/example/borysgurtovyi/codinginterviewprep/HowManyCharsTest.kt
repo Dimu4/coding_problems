@@ -9,8 +9,8 @@ import org.junit.Test
 class HowManyCharsKTest(){
 
     @Test
-    fun printHowManyChars(){
+    fun HowManyCharsKTest(){
         val howManyCharsKTest = HowManyCharsK()
-        println(howManyCharsKTest.howManyChars("All work and no play makes Jack a dull boy"))
+        howManyCharsKTest.howManyChars("All work and no play makes Jack a dull boy")
     }
 }
