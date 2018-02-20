@@ -5,16 +5,13 @@ package com.example.borysgurtovyi.codinginterviewprep
  */
 class PalindromIntK{
     fun isPalindrome(x: Int): Boolean {
-        //x = 123744598
-
+        var newX = x
         var reversedX = 0
-        while (){
-            var reminder = x % 10
-            reversedX = reversedX + reminder
-            x = x / 10
-
+        while (newX > 0){
+            var reminder = newX % 10
+            reversedX = reversedX * 10 + reminder
+            newX /= 10
         }
-
-
+        return x == reversedX
     }
 }
