@@ -3,7 +3,7 @@ package com.example.borysgurtovyi.codinginterviewprep
 /**
  * Created by lisa on 15.02.2018.
  */
-class MoveZeroes{
+class MoveZeroesK{
 
     fun moveZeroes(nums: Array<Int>) {
         var i = 0
